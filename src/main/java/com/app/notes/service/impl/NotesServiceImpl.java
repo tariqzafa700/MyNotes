@@ -23,7 +23,6 @@ public class NotesServiceImpl implements NotesService {
 
 	@Override
 	public List<NoteDetails> getNotes() {
-		System.out.println("Notes " + notes);
         return notes;
 	}
 
