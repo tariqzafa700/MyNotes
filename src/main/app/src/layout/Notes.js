@@ -63,7 +63,8 @@ export class Notes extends Component {
 	handleSubmit = evt => {
 		evt.preventDefault();
 		const { title, content } = this.state;
-        if(title.trim() === "" || content.trim() === "")
+
+        if(title.trim() === "" || content.trim() === "" )
         	return;
 		fetch("/notes", {
 	        method: "POST",
